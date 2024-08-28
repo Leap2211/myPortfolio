@@ -1,0 +1,39 @@
+<div class="flex justify-content-evenly mt-5 p-6">
+  <form [formGroup]="contactForm">
+    <div class="flex flex-column gap-3 p-6">
+      <div class="text-black-alpha-70 hover:text-blue-500 text-2xl font-bold mb-3">
+        Contact Form
+      </div>
+      <div class="flex flex-column gap-2">
+        <div class="font-semibold">Full Name</div>
+        <input pInputText type="text" class="p-2 w-20rem" formControlName="name">
+      </div>
+      <div class="flex flex-column gap-2">
+        <div class="font-semibold">Phone Number</div>
+        <input pInputText type="text" class="p-2 w-20rem" formControlName="phone">
+      </div>
+      <div class="flex flex-column gap-2">
+        <div class="font-semibold">Email</div>
+        <input pInputText type="text" class="p-2 w-20rem" formControlName="email">
+      </div>
+      <div class="flex flex-column gap-2">
+        <div class="font-semibold">Comment</div>
+        <textarea pInputTextarea class="w-20rem" name="comment" cols="30" rows="10" formControlName="comment"></textarea>
+      </div>
+      <div class="flex fadeoutup animation-delay-1000 animation-duration-300">
+        <p-button type="submit" label="Submit" (onClick)="handleSend()"></p-button>
+      </div>
+    </div>
+  </form>
+
+  <div class="flex">
+    <div class="flex align-items-center">
+      <img src="https://st4.depositphotos.com/18556724/25252/v/450/depositphotos_252526146-stock-illustration-modern-communication-contact-icons-design.jpg"
+           class="w-20rem h-20rem border-round fadeoutup animation-delay-1000 animation-duration-300">
+      <img src="https://cdn-icons-png.freepik.com/256/14025/14025046.png?semt=ais_hybrid"
+           class="w-9rem h-9rem border-round fadeoutup animation-delay-1000 animation-duration-300">
+    </div>
+  </div>
+
+
+</div>
